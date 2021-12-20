@@ -1,0 +1,29 @@
+Micro SD module - Test Code
+    // The SD example code creates a datalog.txt file for logging sensor data
+    // open the file. note that only one file can be open at a time,
+    // so you have to close this one before opening another.
+
+// if the file exists in SD card, write sensor data
+    if (sdFile) {
+    //Write to file
+    sdFile.println("ENTER SENSOR DATA HERE");
+    // close the file
+    sdFile.close();
+    // Uncomment to print to the serial port
+    //Serial.println("ENTER SENSOR DATA HERE");
+    } 
+    else {
+    // if the file didn't open, print an error
+    Serial.println(F("error opening file."));
+    }
+    }
+------------------------------------
+ // Set SPI SS pin to output otherwise the SD library functions will not work.
+    // The SD is set to use SPI SS Arduino pin 10 as chip select(CS) by default.
+    // To change the pin use SD.begin(SD_CS_PIN)
+------------------------------------
+// There are several different versions of the LCD I2C adapter, each might have a different address.
+// Try the given addresses by Un/commenting the following rows until LCD works follow the serial monitor prints. 
+// To find your LCD address go to: http://playground.arduino.cc/Main/I2cScanner and run example.
+#define LCD_ADDRESS 0x3F
+//#define LCD_ADDRESS 0x27
