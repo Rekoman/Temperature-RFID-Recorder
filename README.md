@@ -1,0 +1,2 @@
+# Temperature-RFID-Recorder
+To record and save in a SD card every 5 minutes the temperature from two temperature sensors Ds18b20, the time and date, the ID from and RFID tag (RDM6300). Using scripts that people have found on Internet I have been able to save in the SD Card, time &amp; date and temperature from one temperature sensor (DataLoggerDs18b20.txt). Also, using the code from the "Swiss guy" (RFID-Swiss_guy.txt) I could read the RFID tags. I am attaching both scripts. I added another temperature sensor and merged both scripts.
